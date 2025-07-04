@@ -7,7 +7,6 @@
   --resume-border: #007bff;
 }
 
-/* Responsive styles for all phones and small devices */
 @media (max-width: 900px) {
   .container {
     max-width: 95%;
@@ -47,7 +46,7 @@
   }
 }
 
-/* Extra small devices (portrait phones, less than 400px) */
+
 @media (max-width: 400px) {
   h1 {
     font-size: 1em;
