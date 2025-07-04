@@ -16,7 +16,8 @@ document.getElementById("resumeForm").addEventListener("submit", function (e) {
     <p><strong>Skills:</strong></p>
     <ul>${skills.map(skill => `<li>${skill.trim()}</li>`).join("")}</ul>
     <p><strong>Experience:</strong> ${experience}</p>
-    <p><strong>Projects:</strong> ${projects}</p>
+    <p><strong>Projects:</strong></p>
+    <ul>${projects.split(",").map(project => `<li>${project.trim()}</li>`).join("")}</ul>
   `;
 
   document.getElementById("resumeOutput").innerHTML = resumeHTML;

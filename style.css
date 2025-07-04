@@ -7,7 +7,7 @@
   --resume-border: #007bff;
 }
 
-/* Responsive styles */
+
 @media (max-width: 900px) {
   .container {
     max-width: 90%;
