@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <div class="container">
+    <button id="themeToggle">Toggle Dark Mode</button>
+    <h1>Resume Builder</h1>
+
+    <form id="resumeForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="education">Education</label>
+        <textarea id="education"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="skills">Skills (comma separated)</label>
+        <textarea id="skills"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="experience">Experience</label>
+        <textarea id="experience" placeholder="Your work experience..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="projects">Projects</label>
+        <textarea id="projects" placeholder="Your projects..."></textarea>
+      </div>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput" class="resume-box"></div>
+    <br>
+    <button id="downloadPdf">Download as PDF</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
