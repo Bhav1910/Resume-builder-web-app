@@ -7,39 +7,57 @@
   --resume-border: #007bff;
 }
 
-
+/* Responsive styles for all phones and small devices */
 @media (max-width: 900px) {
   .container {
-    max-width: 90%;
-    padding: 25px 15px;
+    max-width: 95%;
+    padding: 20px 10px;
   }
 }
 
 @media (max-width: 600px) {
   body {
-    padding: 10px;
+    padding: 5px;
   }
   .container {
     max-width: 100%;
-    padding: 15px 5px;
+    padding: 10px 2px;
     border-radius: 0;
     box-shadow: none;
   }
   .resume-box,
   .saved-resumes {
-    padding: 10px;
+    padding: 8px;
     border-radius: 0;
   }
   input, textarea {
+    font-size: 13px;
+    padding: 7px;
+  }
+  button {
     font-size: 14px;
     padding: 8px;
   }
-  button {
-    font-size: 15px;
-    padding: 10px;
-  }
   h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+  }
+  .resume-item {
+    padding: 7px;
+    font-size: 13px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 400px) */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1em;
+  }
+  label {
+    font-size: 0.95em;
+  }
+  button {
+    font-size: 13px;
+    padding: 7px;
   }
 }
 
